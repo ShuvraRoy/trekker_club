@@ -1,0 +1,69 @@
+.how_corners{
+  
+ 
+    margin: 1%;
+    padding: 1%;
+  
+  }
+.how_corners1{
+    background-color:#F6F6F6    ;
+    border-radius: 3px;
+    height: 513px;
+    border:.1px solid rgb(185, 185, 185);
+    margin: 1% 4% 1% 4%;
+
+  }
+
+  .how_corners2{
+    background-color:#F6F6F6    ;
+    border-radius: 3px;
+    height: 450px;
+    border:.1px solid rgb(185, 185, 185);
+    margin: 1% 4% 1% 4%;
+
+  }
+
+
+ 
+  .how-h2-1{
+    text-align: center;
+    font-size: 25px;
+    padding: 3%;
+  }
+  .how-p1{
+    text-align: left;
+    padding-left: 3%;
+    color: #203764;
+  }
+.how-img1{
+     height: 190px;
+     width: auto;
+    margin: 8% 5% 3% 5%;
+    text-align: center;
+    padding-bottom: 2%;
+  }
+
+  .how-img2{
+    height: 150px;
+    width: auto;
+   margin: 8% 5% 3% 5%;
+   text-align: center;
+ }
+
+ .how_corners3{
+    background-color:#F6F6F6    ;
+    border-radius: 3px;
+    margin:2% 10% 2% 10% ;
+    padding: 1%;
+    border:.1px solid rgb(185, 185, 185);
+  }
+
+  .how-p2{
+    margin-left: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: left;
+    color:black;
+    font-weight: bold;
+    font-size: large;
+  }

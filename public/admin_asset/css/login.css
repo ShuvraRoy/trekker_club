@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&display=swap');
+
+body {
+  background-color: white;
+  margin: auto;
+  padding: 0;
+}
+
+.card {
+  transition: transform 0.5s ease-in-out;
+}
+
+.big_manu {
+
+  font-size: 20px
+}
+
+.hader_logo {
+  height: 45px;
+  text-align: center;
+  margin-right: auto;
+}
+
+.mobil_hader_logo {
+  height: 45px;
+  text-align: center;
+  margin-right: auto;
+}
+
+hr.hr1 {
+  border: .1px solid #203764;
+
+}
+
+.body_h2 {
+  text-align: center;
+  color: #203764;
+  /* margin-bottom: 2%; */
+  font-style: italic;
+
+
+}
+
+.body_h2_2 {
+  text-align: center;
+  color: #c55911;
+  /* padding: 2%; */
+  font-style: italic;
+}
+
+.li-style {
+  text-align: left;
+  font-size: 25px;
+  color: #203764;
+  font-weight: 600;
+}
+
+.nave {
+  color: white;
+  margin-bottom: 0px;
+  font-size: 18px
+}
+
+/* Change background color of buttons on hover */
+.nave:hover {
+  color: #818181;
+}
+
+.nave:active {
+  color: #818181;
+}
+
+.haderBtn {
+  /* background-color:#203764;
+   border: none;
+   outline: none;  */
+  cursor: pointer;
+
+}
+
+.body_text {
+  margin-left: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: left;
+  color: #203764;
+  font-weight: normal;
+  font-size: large;
+}
+
+.rcorners1 {
+  border-radius: 3px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+}
+
+.rcorners2 {
+  background-color: #f6f6f670;
+  border-radius: 3px;
+  margin: 1%;
+  padding: 1%;
+  border: .1px solid rgb(185, 185, 185);
+}
+
+.rcorners3 {
+  background-color: #f6f6f670;
+  border-radius: 3px;
+  margin: 1%;
+  padding: 1%;
+  border: .1px solid rgb(185, 185, 185);
+}
+
+.rcorners4 {
+  /* background-color: #F6F6F6; */
+  border-radius: 3px;
+  margin: 1%;
+  padding: 1%;
+  /* border: 0.1px solid rgb(185, 185, 185); */
+  /* width: 100%; */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #203764;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+
+/*  for computer side nave  */
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #203764;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  margin-top: 0px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+
+  color: white;
+  padding: 10px 15px;
+  border: none;
+
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 0px;
+}
+
+/* curve paint */
+/* ---Banner--- */
+.banner {
+  background-color: #f6f6f6;
+  position: relative;
+  padding: 0 0 1.5rem 0;
+}
+
+#curve {
+  background-color: #e6e6e6;
+  width: 100%;
+  height: auto;
+}
+
+.curve {
+  padding-top: 5rem;
+  position: absolute;
+  z-index: 0;
+}
+
+.curve svg {
+  display: block;
+}
+
+hr {
+  margin-bottom: 0;
+}
+
+/* how it works */
+.card-bg-design {
+  background-color: white;
+  box-shadow: 4px 4px 4px 0px rgba(179, 174, 174, 0.43);
+  border: 1px solid #ccc7c759;
+  -webkit-mask-image: radial-gradient(circle at top, transparent 34px, black 31px);
+}
+
+.numberCircle {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  font-size: 26.6px;
+  color: white;
+  background: #203764;
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 5px 0 8px;
+}
+
+/* .banner .col {
+  padding-top: 3%;
+} */
+
+/* rental agreemnet */
+
+.rental .content-pad {
+  padding: 0 5rem 0;
+}
+
+.rental .head-btm-pad {
+  padding: 2rem;
+}
+
+/* --image-- */
+.rental .img-div-h1 {
+  font-family: 'Bree Serif', serif;
+  font-size: 2rem;
+  color: #203764;
+}
+
+/* Card elements */
+.input-group>.custom-select:not(:first-child),
+.input-group>.form-control:not(:first-child) {
+  border-radius: .25rem !important;
+}
+
+.rental .card {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+.rental .card-pad {
+  padding: 3rem 3rem 0 3rem;
+}
+
+.thead-blue {
+  background-color: #203764;
+  color: white;
+}
+
+.rental table th {
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.rental .form-control:focus {
+  color: black;
+  border-color: #203764;
+}
+
+.rental label {
+  margin: 0 6px 0 0;
+  font-size: 18px;
+}
+
+.w-fit {
+  width: fit-content !important;
+}
+
+.btn-blue {
+  font-weight: bold;
+  color: #203764;
+  background-color: white;
+  border-color: #203764;
+}
+
+.btn-primary {
+  font-weight: bold;
+  background-color: #203764;
+  border-color: #203764;
+}
+
+.btn-blue:hover {
+  color: #fff;
+  background-color: #203764;
+  border-color: #203764;
+}
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-width: 991px) {
+  .li-style {
+    font-size: 1.2rem;
+    color: #c55911;
+    font-weight: 600;
+  }
+
+  .rcorners3 {
+    padding: 4%;
+  }
+
+  /* read more */
+  .rcorners3 .body_text {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    max-height: 190px;
+    overflow: hidden;
+  }
+
+  .rcorners3 .body_text::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, #f6f6f6);
+  }
+
+  /* more type */
+
+  /* button */
+  .rcorners3 .home_more {
+    position: relative;
+    /* margin: 15px 0; */
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: transparent;
+    color: black;
+    text-transform: uppercase;
+    display: inline-block;
+    justify-content: center;
+    border: 2px solid #c55911;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .rcorners3 .home_more:hover {
+    background-color: #c55911 !important;
+    border-color: #c55911 !important;
+    color: #fff !important;
+  }
+
+  .rcorners3 .home_more::before {
+    content: 'Read More';
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .homeActive .home_more {
+    background-color: #c55911;
+    border-color: #c55911;
+    color: #fff !important;
+  }
+
+  .homeActive .home_more::before {
+    content: 'Read Less';
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .homeActive .body_text {
+    max-height: 100%;
+  }
+
+  .homeActive .body_text::before {
+    display: none;
+  }
+
+  /* rcorners4 */
+  .rcorners4 .card-header {
+    background-color: #203764;
+  }
+
+  .rcorners4 .card {
+    transition: none;
+  }
+
+  .rcorners4 .card-body {
+    background-color: #e4e5e6ab;
+    padding: 1rem;
+    height: 210px;
+  }
+
+  .rcorners4 .card:hover {
+    transform: none;
+  }
+
+  .rcorners4 .carousel .carousel-inner .carousel-item .card-body ul {
+    margin: 0;
+    padding-left: 1rem;
+  }
+
+  .carousel-item .card-img-top,
+  .carousel-item .card-img-top-big {
+    width: 136px;
+    padding: 1rem 0;
+  }
+
+  .carousel-item .card-img-top-big {
+    width: 77px;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  }
+
+  .carousel-control-prev {
+    left: -14%;
+  }
+
+  .carousel-control-next {
+    right: -14%;
+  }
+
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    display: block;
+    transition: none;
+  }
+
+  .howItWOrks_Mob .carousel-control-next,
+  .howItWOrks_Mob .carousel-control-prev {
+    /* position: fixed; */
+    bottom: 30%;
+    top: -50%;
+  }
+
+  .howItWOrks_Mob .carousel-control-prev {
+    left: 0;
+  }
+
+  .howItWOrks_Mob .carousel-control-next {
+    right: 0;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  #hiddenslider {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .d-mobile {
+    display: inherit;
+  }
+
+  .d-mob-flex {
+    display: flex;
+  }
+
+  .d_none_mobile {
+    display: none;
+  }
+
+  /* how it works */
+  .howItWOrks_Mob .card {
+    margin-top: 1rem !important;
+  }
+
+  .numberCircle {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    font-size: 18px;
+    color: white;
+    background: #203764;
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 0 8px;
+  }
+
+  .card-bg-design {
+    background-color: white;
+    box-shadow: 4px 4px 4px 0px rgba(179, 174, 174, 0.43);
+    border: 1px solid #ccc7c759;
+    -webkit-mask-image: none;
+  }
+
+  .card-text {
+    line-height: 1.3;
+  }
+
+  /* rental for mobile */
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(177, 175, 175, 0.5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  }
+
+  .rental .content-pad {
+    padding: 0 5px;
+  }
+
+  .rental .head-btm-pad {
+    padding: 0;
+  }
+
+  .rental .img-div-h1 {
+    font-size: 18px;
+  }
+
+  .rental table {
+    font-size: 12px;
+    border-spacing: 0;
+  }
+
+  .rental .table td,
+  .rental .table th {
+    padding: .5rem;
+  }
+
+  .rental .table tbody tr th {
+    vertical-align: middle;
+    background-color: #203764;
+    color: white;
+  }
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+
+  
+}
+
+  /* //carousel slider */
+
+@media (min-width: 768px) {
+  /* show 4 items */
+  .carousel-inner .active,
+  .carousel-inner .active + .carousel-item ,
+  .carousel-inner .active + .carousel-item  + .carousel-item ,
+  .carousel-inner .active + .carousel-item  + .carousel-item  + .carousel-item  {
+    display: block;
+  }
+
+  .carousel-inner .carousel-item.active:not(.carousel-item-right  ):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right  ):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right  ):not(.carousel-item-left) + .carousel-item+ .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right  ):not(.carousel-item-left) + .carousel-item+ .carousel-item+ .carousel-item{
+    transition: none;
+  }
+
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .carousel-inner .active.carousel-item  + .carousel-item  + .carousel-item  + .carousel-item  + .carousel-item  {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item ,
+  .carousel-item-next.carousel-item-left + .carousel-item  + .carousel-item ,
+  .carousel-item-next.carousel-item-left + .carousel-item  + .carousel-item  + .carousel-item ,
+  .carousel-item-next.carousel-item-left + .carousel-item  + .carousel-item  + .carousel-item  + .carousel-item  {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  /* farthest right hidden item must be absolue position for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* right or prev direction */
+  .active.carousel-item-right   + .carousel-item-prev.carousel-item-right  ,
+  .carousel-item-prev.carousel-item-right   + .carousel-item ,
+  .carousel-item-prev.carousel-item-right   + .carousel-item  + .carousel-item ,
+  .carousel-item-prev.carousel-item-right   + .carousel-item  + .carousel-item  + .carousel-item ,
+  .carousel-item-prev.carousel-item-right   + .carousel-item  + .carousel-item  + .carousel-item   + .carousel-item   {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
