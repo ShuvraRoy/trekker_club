@@ -26,9 +26,13 @@
                         </div>
                         <div class="widget-content">
                             <ul class="links-list clearfix">
-                                @foreach($activities as $activity)
-                                <li><a href="{{ url('/activities/' . strtolower(str_replace(' ', '-', $activity->name))) }}">{{ $activity->name }}</a></li>
-                                @endforeach
+                                @if(!empty($activities) && $activities->count())
+                                    @foreach($activities as $activity)
+                                        <li><a href="{{ url('/activities/' . strtolower(str_replace(' ', '-', $activity->name))) }}">{{ $activity->name }}</a></li>
+                                    @endforeach
+                                @else
+                                    {{-- <li>No activities available</li> --}}
+                                @endif
                             </ul>
                         </div>
                     </div>
