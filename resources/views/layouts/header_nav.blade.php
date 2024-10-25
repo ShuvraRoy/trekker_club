@@ -19,9 +19,13 @@
                             </li> 
                             <li class="dropdown"><a href="#">Activities</a>
                                 <ul>
-                                    @foreach($activities as $activity)
-                                        <li><a href="{{ url('/activities/' . strtolower(str_replace(' ', '-', $activity->name))) }}">{{ $activity->name }}</a></li>
-                                    @endforeach
+                                    @if(isset($activities) && count($activities) > 0)
+                                        @foreach($activities as $activity)
+                                            <li><a href="{{ url('/activities/' . strtolower(str_replace(' ', '-', $activity->name))) }}">{{ $activity->name }}</a></li>
+                                        @endforeach
+                                    @else
+                                        {{-- <li><a href="#">No Activities Available</a></li> --}}
+                                    @endif
                                 </ul>
                             </li>
                             <li><a href="{{ url('/about-us') }}">About us</a></li>
